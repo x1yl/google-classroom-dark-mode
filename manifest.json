@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Google Classroom Dark Mode",
+  "version": "1.0",
+  "description": "Ease your eyes with a dark mode toggle for Google Classroom.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://classroom.google.com/*"],
+      "js": ["content.js"],
+      "css": ["button.css"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{718cda4a-f669-44f5-9137-78b7b78864f3}"
+    }
+  }
+}

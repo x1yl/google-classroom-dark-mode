@@ -1,0 +1,31 @@
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: fit-content;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #3367d6;
+  transform: scale(1.1);
+}
+
+#dark-mode-toggle.active {
+  background-color: #2a2820;
+}
+
+#dark-mode-toggle.active:hover {
+  background-color: #1c1b16;
+}
